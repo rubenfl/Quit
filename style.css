@@ -896,6 +896,18 @@ object {
 #image-2 {
     background-image: url(https://wpmmp.bmcc.cuny.edu/~rfernand/wp-content/themes/quit/images/quit.jpg);
 }
+#image-3 {
+    background-image: url(https://wpmmp.bmcc.cuny.edu/~rfernand/wp-content/themes/quit/images/advice1.jpg);
+}
+#image-4 {
+    background-image: url(https://wpmmp.bmcc.cuny.edu/~rfernand/wp-content/themes/quit/images/background1.jpg);
+}
+#image-5 {
+    background-image: url(https://wpmmp.bmcc.cuny.edu/~rfernand/wp-content/themes/quit/images/quit4.jpg);
+}
+#image-6 {
+    background-image: url(https://wpmmp.bmcc.cuny.edu/~rfernand/wp-content/themes/quit/images/quitpsd.jpg);
+}
 .background-img {
     height: 100vh;
 
@@ -921,6 +933,9 @@ object {
     padding: 0 3px;
     margin: 15px 3px;
    
+}
+.navbar-default{
+	margin-top: 2%;
 }
 nav a:hover{
     text-decoration: underline;
@@ -965,7 +980,7 @@ h1{
     margin-bottom: 1%;
 }
 #carouselcontainer .carousel-caption{
-    color: black;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -999,8 +1014,65 @@ footer h6{
     height: 100%;
 }
 #quit img{
-    padding-top: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#quit h1{
+	font-size: 4em;
+	color: black;
 }
 #function{
 	margin-left: 2%;
 }
+.myPostContent {
+	width: 100;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	font-size: 2em;
+	color:black;
+	background-color: #D4933C;
+	
+}
+.myPostTitle {
+	width: 100;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background: black;
+	font-family: Helvetica;
+	font-size: 3em;
+	color:#D4933C;
+	text-align: center;
+}
+.myPostContent img{
+	padding-top: 2%;
+	padding-left: 2%;
+	margin-left: 40px;
+}
+.entry-content img{
+	padding-left: 5%;
+	padding-top: 2%;
+	margin-left: 30px;
+}
+.entry-content{
+	background:#D4933C;
+}
+h5{
+	font-size: 4em;
+	text-align: center;
+}
+#stories img{
+	margin-top: 5%;
+}
+#plan img{
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+#carousel-example-generic{
+	margin-bottom: 5%;
+}
+button{
+	margin-bottom: 4%;
+}
+

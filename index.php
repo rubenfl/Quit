@@ -118,17 +118,27 @@ medical professional.</p>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
+				<div class="myPost">
+                    <div class="myPostTitle">
+                        <?php the_title(); ?>
+                    </div>
+                    <div class="myPostContent">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					//get_template_part( 'template-parts/content', get_post_format() );
-				?>
+			<?php endwhile; ?>
 
-			<?php endwhile; ?>-->
+            <?php
+            $args = array( 'post_type' => 'final_item', 'posts_per_page' => 10 );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post();
+                the_title();
+                echo '<div class="entry-content">';
+                the_content();
+                echo '</div>';
+            endwhile;
+        ?>
 
 			<?php the_posts_navigation(); ?>
 
@@ -137,6 +147,39 @@ medical professional.</p>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php //endif; ?>
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+});
+</script>
+        <h2>Quit Smoking</h2>
+
+<p>Quit Today</br>
+Smoking produce cancer</p>
+
+<button>Click me</button>
+
+</div>
+<div class="col-xs-12 col-sm-5">
+    <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<p>Quit Smoking Now and click on the "Hide" button, it will disappear, and you are going to have a better life.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

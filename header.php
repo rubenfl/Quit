@@ -29,6 +29,7 @@
      <link rel="stylesheet" href="animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
 <!--end-->
 <?php wp_head(); ?>
 </head>
@@ -51,7 +52,7 @@
       <ul class="nav navbar-nav">
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a>
+        <li><a href="https://wpmmp.bmcc.cuny.edu/~rfernand/" rel="home">Home</a>
         <li><a href="https://wpmmp.bmcc.cuny.edu/~rfernand/about-us/">About Us</a></li>
         <li><a href="https://wpmmp.bmcc.cuny.edu/~rfernand/advice-support/">Advice & Support</a></li>
         <li><a href="https://wpmmp.bmcc.cuny.edu/~rfernand/quit-stories/">Quit Stories</a></li>
